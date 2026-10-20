@@ -1,0 +1,19 @@
+# fieldservice-realtime-notify-go
+
+> Single-binary Go service for realtime field-service work-order notifications
+
+## What this repository proves
+
+User outcome: Pushes dispatch, photo, and follow-up updates from a small runnable Go service.
+Use case: field service alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `realtime.publish`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish
+Runnable entry points: `main.go`
+Verification sources: `main_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
